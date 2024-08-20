@@ -38,7 +38,6 @@ $connection = $db->getConn();
 
    <?php
       if($_SERVER['REQUEST_METHOD']=='POST'){
-      $id = null; //هنا وضعتها فارغة لان ال id هو auto increment 
       $title=$_POST['title'];
       $auther=$_POST['auther'];
       $content=$_POST['content'];

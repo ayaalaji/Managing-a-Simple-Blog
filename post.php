@@ -20,8 +20,8 @@ class post{
         $this->updated_at = $updated_at;
     }
     public function createPost() {
-        global $connection , $id,$title,$auther,$content,$created_at,$updated_at;
-        $sql = "INSERT INTO `posts` (`id`,`title`, `auther`, `content`, `created_at`, `updated_at`) VALUES ('$id','$title','$auther','$content' , '$created_at', '$updated_at');";
+        global $connection ;
+        $sql = "INSERT INTO `posts` (`title`, `auther`, `content`, `created_at`, `updated_at`) VALUES ('$this->title','$this->auther','$this->content' , '$this->created_at', '$this->updated_at');";
         
         $result=mysqli_query($connection,$sql);
         if ($result == true){
@@ -34,11 +34,11 @@ class post{
         $this->updated_at = date('Y-m-d H:i:s');  // تحديث الوقت الحالي
 
         $sql = "UPDATE `posts` SET 
-                `title` = '$this->title',
-                `auther` = '$this->auther',
-                `content` = '$this->content',
-                `updated_at` = '$this->updated_at'
-                WHERE `id` = '$id'";
+            `title` = '$this->title',
+            `auther` = '$this->auther',
+            `content` = '$this->content',
+            `updated_at` = '$this->updated_at'
+            WHERE `id` = '$id'";
 
         $result = mysqli_query($connection, $sql);
         if ($result) {
