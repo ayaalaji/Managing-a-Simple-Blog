@@ -1,7 +1,6 @@
 <?php
-require_once 'database.php';
-require_once 'post.php';
-
+include_once ("../database/database.php");
+include_once ("../database/post.php");
 $db = new Database();
 $connection = $db->getConn();
 

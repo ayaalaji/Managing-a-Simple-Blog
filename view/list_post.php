@@ -1,6 +1,6 @@
 <?php
-require_once 'database.php';
-require_once 'post.php';
+include_once ("../database/database.php");
+include_once ("../database/post.php");
 
 $post = new post(null, null, null, null, null, null);//هنا عند انشاء كائن من post وضعنا قيم null حتى لا نضطر الى تعيين خصائص محددة عند تلك النقطة
 $result1 = $post->listAll();

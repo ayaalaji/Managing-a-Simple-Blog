@@ -1,10 +1,13 @@
-# اسم المشروع
-نظام ادارة مدونة بسيطة
+# the name of project 
+Blog Management System
 
-# خطوات تشغيل المشروع
-اولا يجب ان نذهب الى ال  phpmyadmin وننشئ قاعدة بيانات تدعى blog_db
+# Features  
+1. php pure with OOP(Objected Oriented Php)
+2. I made some crud function
+3. Imade connection to database and add table 'posts' to database
 
-وبعدها يجب ان نكتب في ال url :localhost/task2/datadase.php حتى نقوم بانشاء قاعدة البيانات التي تحوي على الجدول post
+# steps for run this project
+1. add database_name in phpmyadmin called 'blog_db'
+2. in url put localhost/task2 the project while run and you can see all interface
 
-ثم بعد ذلك نكتب في ال url :localhost/task2/list_post.php التي تعرض لنا المقالات المتوفرة في قاعدة البيانات
 
